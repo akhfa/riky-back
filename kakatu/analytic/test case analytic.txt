@@ -1,0 +1,164 @@
+TEST CASE
+=====================================================================================================
+Benar
+{ 
+    "userid" : "13A8", 
+    "feature" : [ 
+                    { "feature_name": "Kriminal", 
+                      "screen" : [ 
+                                        { "screen_name" : "timer_screen", 
+                                          "properties" : [  
+                                                                { "properties_name" : "2_jam" },   
+                                                                { "properties_name" : "1_jam" }
+                                                            ],
+                                          "activation" : [  
+                                                                { "activation_name" : "timer_ok" },   
+                                                                { "activation_name" : "snooze" }
+                                                            ]
+                                        },
+                                        { "screen_name" : "setting_screen", 
+                                          "properties" : [  
+                                                                { "properties_name" : "edit_button" }
+                                                            ],
+                                          "activation" : [  
+                                                                { "activation_name" : "setting_timer_ok" }
+                                                            ]
+                                        }
+                                ]
+                    },
+                    { "feature_name": "Pendidikan", 
+                      "screen" : [ 
+                                        { "screen_name" : "location_screen", 
+                                          "properties" : [  
+                                                                { "properties_name" : "history_button" }
+                                                            ],
+                                          "activation" : [  
+                                                                { "activation_name" : "activate_ok" }
+                                                            ]
+                                        }
+                                ]
+                    }
+                ] 
+}
+=====================================================================================================
+Salah, gak ada feature
+{ 
+    "userid" : "13A8", 
+    "feature" : [ 
+                    { "feature_name": "no feature", 
+                      "screen" : [ 
+                                        { "screen_name" : "timer_screen", 
+                                          "properties" : [  
+                                                                { "properties_name" : "2_jam" },   
+                                                                { "properties_name" : "1_jam" }
+                                                            ],
+                                          "activation" : [  
+                                                                { "activation_name" : "OK" },   
+                                                                { "activation_name" : "snooze" }
+                                                            ]
+                                        }
+                                        
+                                ]
+                    }
+                ] 
+}
+=====================================================================================================
+Salah, gak ada screen
+{ 
+    "userid" : "13A8", 
+    "feature" : [ 
+                    { "feature_name": "Kriminal", 
+                      "screen" : [ 
+                                        { "screen_name" : "no screen", 
+                                          "properties" : [  
+                                                                { "properties_name" : "2_jam" },   
+                                                                { "properties_name" : "1_jam" }
+                                                            ],
+                                          "activation" : [  
+                                                                { "activation_name" : "OK" },   
+                                                                { "activation_name" : "snooze" }
+                                                            ]
+                                        }
+                                        
+                                ]
+                    }
+                ] 
+}
+=====================================================================================================
+Salah, gak ada property
+{ 
+    "userid" : "13A8", 
+    "feature" : [ 
+                    { "feature_name": "Kriminal", 
+                      "screen" : [ 
+                                        { "screen_name" : "timer_screen", 
+                                          "properties" : [  
+                                                                { "properties_name" : "2_jam" },   
+                                                                { "properties_name" : "1_jam" }
+                                                            ],
+                                          "activation" : [  
+                                                                { "activation_name" : "OK" },   
+                                                                { "activation_name" : "snooze" }
+                                                            ]
+                                        }
+                                        
+                                ]
+                    }
+                ] 
+}
+=====================================================================================================
+Salah, gak ada activation
+{ 
+    "userid" : "13A8", 
+    "feature" : [ 
+                    { "feature_name": "Kriminal", 
+                      "screen" : [ 
+                                        { "screen_name" : "timer_screen", 
+                                          "properties" : [  
+                                                                { "properties_name" : "2_jam" },   
+                                                                { "properties_name" : "1_jam" }
+                                                            ],
+                                          "activation" : [  
+                                                                { "activation_name" : "no activation" },   
+                                                                { "activation_name" : "snooze" }
+                                                            ]
+                                        }
+                                        
+                                ]
+                    }
+                ] 
+}
+=====================================================================================================
+Update kamus
+{
+    "feature" : [ 
+                    { "feature_id" : "feature_001",
+                      "feature_name": "timer", 
+                      "screen" : [ 
+                                        { "screen_id" : "screen_001",
+                                          "screen_name" : "timer_screen", 
+                                          "properties" : [  
+                                                                { 
+                                                                  "properties_id" : "property_001",
+                                                                  "properties_name" : "30 menit" 
+                                                                },   
+                                                                { 
+                                                                  "properties_id" : "property_002",
+                                                                  "properties_name" : "1 jam" 
+                                                                }
+                                                            ],
+                                          "activation" : [  
+                                                                { 
+                                                                  "activation_id" : "activation_001",
+                                                                  "activation_name" : "OK" 
+                                                                },   
+                                                                { 
+                                                                  "activation_id" : "activation_002",
+                                                                  "activation_name" : "snooze" 
+                                                                }
+                                                            ]
+                                        }
+                                ]
+                    }
+                ] 
+}

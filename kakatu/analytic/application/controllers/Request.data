@@ -1,0 +1,13 @@
+json_user_id = userid
+json_feature = feature
+json_feature_id = feature_id
+json_feature_name = feature_name
+json_screen = screen
+json_screen_id = screen_id
+json_screen_name = screen_name
+json_properties = properties
+json_properties_id = properties_id
+json_properties_name = properties_name
+json_activation = activation
+json_activation_id = activation_id
+json_activation_name = activation_name
